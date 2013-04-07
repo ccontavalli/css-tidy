@@ -29,7 +29,7 @@ class Stylesheet(object):
 def main():
   argparser = argparse.ArgumentParser(description=__doc__)
   argparser.add_argument("csvfile", metavar="CSV-FILE", nargs=1, help="CSS file to parse")
-  argparser.add_argument("--keep-comments", dest="comments", action="store_false",
+  argparser.add_argument("--ignore-comments", dest="comments", action="store_false",
                          default=True, help="Keep comments in generatd output files?")
   args = argparser.parse_args()
   style_options = STYLE_OPTIONS
